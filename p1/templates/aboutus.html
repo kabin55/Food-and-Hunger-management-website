@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<link rel="stylesheet" href="/static/aboutus.css">
+<body>
+    
+    <nav>
+        <div class="logo">
+          <img src="/static/Image/foodindexs.png">
+          <h3>Food and Hunger Index</h3>
+        </div>
+      
+        <div class="menu">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/information/">Information</a></li>
+            <li><a href="/contact/">Contact us</a></li>
+            <li class="current"><a href="/aboutus/">About us</a></li>
+          </ul>
+        </div>
+        <a href="/login/"><button class="Login">Login</button></a>
+        <a href="/signup/"><button class="donate-btn">Donate</button></a>
+      </nav>
+
+  <div class="circle-top"></div>
+    <div class="circle-bottom"></div>
+    <header>
+        <div class="header-content">
+            <span>Team-The Rise</span>
+            <h1>Meet a team of experts and innovators who are pioneers in their field</h1>
+        </div>
+    </header>
+    <section >
+        <div class="card-top">
+            <div class="card">
+                <img src="/static/Image/avatar.png" alt="name">
+                <h2>Name: kabin Shrestha</h2>
+                <p>Role: Project leader, Backend Developer</p>
+            </div>
+            <div class="card">
+                <img src="/static/Image/avatar.png" alt="name">
+                <h2>Name: Bishal Poudel</h2>
+                <p>Role: UI/UX, Frontend Developer</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/static/Image/avatar.png" alt="name">
+            <h2>Name: Sujal Ratna Tuladdar</h2>
+            <p>Role: Project Manager, Documentation Researcher </p>
+        </div>
+        <div class="card">
+            <img src="/static/Image/avatar.png" alt="name">
+            <h2>Name: Rijan Khayju</h2>
+            <p>Role: Technical Analyst </p>
+        </div>
+        <div class="card">
+            <img src="/static/Image/avatar.png" alt="name">
+            <h2>Name: Ashish Tamang</h2>
+            <p>Role: Operations Tester</p>
+        </div>
+    </section>
+
+<footer>
+    <div class="line"></div>
+    <div class="left">
+        <img src="/static/Image/foodindexs.png" alt=""> 
+        <h3 id="ft">Food and Hunger Index</h3>
+    </div>
+  
+    <div class="right">
+        <h3 id="loc"><i class="fa-solid fa-location-dot fa-sm"></i> Dhobidhara, Kathmandu, Nepal</h3>
+        <h3 id="num"><i class="fa-solid fa-phone fa-sm"></i> Phone Number</h3>      
+    </div>
+    <div class="line"></div>
+    <div class="menu"> 
+        <ul>
+            <a href="/"><li>Home</li></a>
+            <a href="/information/"><li>Information</li>
+            <a href="/aboutus/"><li>About us</li>
+            <a href="/contact/"><li>Contact us</li>
+        </ul>
+    </div> 
+  </footer>
+  
+  
+  
+  
+  
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="form">
+            <center>
+            <p>Please fill out the form below. Hopefully it is blessed.</p>
+            <label for="donationType">Choose a donation type:</label><br>
+            <select id="donationType" name="donationType">
+                <option value="Khalti">Khalti</option>
+                <option value="Bank">Bank</option>
+                <option value="Connect IPS">Connect IPS</option>
+            </select><br>
+            
+            <label for="customDonationAmount">Enter a donation amount:</label><br>
+            <input id="customDonationAmount" type="number" name="customDonationAmount"><br>
+            <label for="donationFrequency">Donation frequency:</label><br>
+            <select id="donationFrequency" name="donationFrequency">
+                <option value="one-time">One time</option>
+            </select><br>
+            <input type="button" value="Cancel" class="cancel">
+            <input type="submit" value="Go to checkout">
+        </center>
+        </form>
+    </div>
+  </div>
+  
+  
+<script>
+    
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.querySelector(".donate-btn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    // Cancel button functionality
+    document.querySelector('.cancel').addEventListener('click', function () {
+        modal.style.display = "none";
+    });
+
+</script>  
+</body>
+</html>

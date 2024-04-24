@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <link rel="stylesheet" href="/static/information.css">
+</head>
+<body>
+    <!-- header -->
+<nav>
+    <div class="logo">
+      <img src="/static/Image/foodindexs.png">
+      <h3>Food and Hunger Index</h3>
+    </div>
+  
+    <div class="menu">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li class="current"><a href="/information/">Information</a></li>
+        <li><a href="/contact/">Contact us</a></li>
+        <li><a href="/aboutus/">About us</a></li>
+      </ul>
+    </div>
+    <a href="/login/"><button class="Login">Login</button></a>
+    <a href="/signup/"><button class="donate-btn">Donate</button></a>
+  </nav>
+
+  
+<h1 id="title">Global Hunger Index of SAARC Countries</h1>
+<div class="map">
+  <img src="/static/Image/Map.png">
+</div>
+<div class="country">
+<img src="/static/Image/Tooltip.png" alt="">
+<img src="/static/Image/Tooltip-1.png" alt="">
+<img src="/static/Image/Tooltip-2.png" alt="">
+<img src="/static/Image/Tooltip-3.png" alt="">
+<img src="/static/Image/Tooltip-4.png" alt="">
+<img src="/static/Image/Tooltip-5.png" alt="">
+<img src="/static/Image/Tooltip-6.png" alt="">
+</div>
+<div class="rank">
+    <h1>Global Hunger Index Ranking of 2023 </h1>
+    <img src="/static/Image/rank.png" alt="">
+</div>
+
+<!-- Country detail -->
+    <!-- Nepal -->
+    <div class="condetail">
+      <div class="con">
+          <div class="title">
+              <h2>Nepal</h2>
+              <img id="area" src="/static/Image/nepal.png" alt="">
+          </div>
+          <p>Nestled amidst the majestic Himalayas, Nepal stands as a jewel of natural beauty and cultural richness in South Asia. Renowned for its breathtaking landscapes, diverse ethnicities, and ancient traditions, Nepal captivates the hearts of travelers and scholars alike. With Mount Everest, the world's highest peak, proudly gracing its northern skyline, Nepal's geography ranges from the towering heights of the Himalayas to the lush lowland plains of the Terai region, offering a tapestry of ecological diversity.</p>
+          <button class="nepal" onclick="toggleInfo('nepal')">Data</button>
+          <!-- Modal Popup for Nepal -->
+          <div id="nepalModal" class="popup">
+              <div class="modal-contents">
+                  <span class="close" onclick="toggleInfo('nepal')">&times;</span>
+                  <img src="/static/Image/Tooltip-5.png" alt="">
+                  <p>Nepal, renowned for its cultural diversity and stunning landscapes, faces persistent challenges regarding food security and hunger. Despite its rich agricultural traditions, many Nepalese communities, particularly in rural areas, struggle with access to nutritious food. Staple dishes like Dal Bhat (lentil soup with rice) reflect the country's culinary heritage, but factors such as limited agricultural productivity, socio-economic disparities, and natural disasters contribute to food insecurity. Malnutrition, especially among children, remains a pressing issue, demanding concerted efforts from government, NGOs, and international organizations to improve agricultural practices, enhance nutrition education, and implement social welfare programs. While progress has been made, sustained investment and holistic approaches are essential to ensure that all Nepalese citizens have access to an adequate and diverse diet, paving the way for a healthier and more prosperous future.</p>
+                  <h3>GHI of Nepal from 2019 to 2023</h3>
+                  <img src="/static/Image/nepal line graph.png" alt="">
+              </div>
+          </div>  
+      </div>
+  </div>
+
+  <!-- Bhutan -->
+  <div class="condetail">
+      <div class="con">
+          <div class="title">
+              <h2>Bhutan</h2>
+              <img id="area" src="/static/Image/bhutan.png" alt="">
+          </div>
+          <p>Nestled in the heart of the Eastern Himalayas lies a land of mystical allure and serene beauty - Bhutan. Renowned for its commitment to Gross National Happiness (GNH) and its unique blend of tradition and modernity, Bhutan stands as a beacon of cultural preservation and sustainable development. This essay endeavors to explore the multifaceted dimensions of Bhutan, from its rich cultural heritage to its progressive policies and environmental stewardship.</p>
+          <button class="Bhutan" onclick="toggleInfo('bhutan')">Data</button>
+          <!-- Modal Popup for Bhutan -->
+          <div id="bhutanModal" class="popup">
+              <div class="modal-contents">
+                  <span class="close" onclick="toggleInfo('bhutan')">&times;</span>
+                  <img src="/static/Image/Tooltip.png" alt="">
+                  <p>The challenge of food security in Bhutan underscores the complex interplay of environmental, socio-economic, and cultural factors. While significant progress has been made, much remains to be done to ensure that all Bhutanese have access to nutritious and culturally appropriate food. By fostering partnerships, investing in sustainable agriculture, and empowering communities, Bhutan can chart a course towards a future where hunger is relegated to the annals of history. As Bhutan continues its journey towards Gross National Happiness, nourishing its people with food security will remain a cornerstone of its aspirations for a prosperous and harmonious society.</p>
+                  <h3>GHI of Bhutan from 2019 to 2023</h3>
+                  <img src="/static/Image/bhutan line graph.png" alt="">
+              </div>
+          </div>  
+      </div>
+  </div>
+
+  <!-- Bangladesh -->
+  <div class="condetail">
+      <div class="con">
+          <div class="title">
+              <h2>Bangladesh</h2>
+              <img id="area" src="/static/Image/bangladesh.png" alt="">
+          </div>
+          <p>Nestled in the fertile Ganges-Brahmaputra Delta, Bangladesh emerges as a country rich in history, cultural diversity, and dynamic progress. Despite grappling with challenges such as natural disasters, population density, and socio-economic disparities, Bangladesh has shown remarkable resilience and determination in pursuing development and fostering its unique cultural identity. This essay endeavors to explore the multifaceted facets of Bangladesh, from its rich cultural heritage to its strides in socio-economic development and environmental conservation.</p>
+          <button class="bangladesh" onclick="toggleInfo('bangladesh')">Data</button>
+          <!-- Modal Popup for Bangladesh -->
+          <div id="bangladeshModal" class="popup">
+              <div class="modal-contents">
+                  <span class="close" onclick="toggleInfo('bangladesh')">&times;</span>
+                  <img src="/static/Image/Tooltip-1.png" alt="">
+                  <p>In the densely populated landscape of Bangladesh, the issue of food security and hunger holds significant importance. Despite remarkable progress in various developmental aspects, ensuring access to nutritious food for all remains a critical challenge. This essay aims to delve into the complexities of food security in Bangladesh, exploring its causes, impacts, and the concerted efforts undertaken to alleviate hunger and promote well-being.</p>
+                  <h3>GHI of Bangladesh from 2019 to 2023</h3>
+                  <img src="/static/Image/bangladesh line graph.png" alt="">
+              </div>
+          </div>  
+      </div>
+  </div>
+
+  <!-- Maldives -->
+  <div class="condetail">
+      <div class="con">
+          <div class="title">
+              <h2>Maldives</h2>
+              <img id="area" src="/static/Image/maldives.png" alt="">
+          </div>
+          <p>Nestled amidst the azure waters of the Indian Ocean, the Maldives stands as an epitome of natural beauty, luxury, and cultural heritage. Despite the challenges posed by its vulnerable geography, the Maldives has demonstrated remarkable resilience and determination in preserving its island nation identity while pursuing sustainable development. This essay embarks on a journey to unravel the multifaceted facets of the Maldives, from its pristine coral reefs to its burgeoning tourism industry and efforts towards environmental conservation.</p>
+          <button class="maldives" onclick="toggleInfo('maldives')">Data</button>
+          <!-- Modal Popup for Maldives -->
+          <div id="maldivesModal" class="popup">
+              <div class="modal-contents">
+                  <span class="close" onclick="toggleInfo('maldives')">&times;</span>
+                  <img src="/static/Image/Tooltip-2.png" alt="">
+                  <p>The Maldives, comprising numerous islands scattered across the Indian Ocean, faces unique challenges in ensuring food security due to its small land area, limited arable land, and dependence on imports. While the country has made progress in reducing poverty and improving access to basic services, disparities in food access persist, particularly among marginalized communities and remote islands. Additionally, environmental factors such as climate change, sea-level rise, and coral reef degradation pose threats to fisheries, a crucial source of food and livelihood for Maldivians.</p>
+                  <h3>GHI of Maldives from 2019 to 2023</h3>
+                  <img src="/static/Image/maldives line graph.png" alt="">
+              </div>
+          </div>  
+      </div>
+  </div>
+
+  <!-- Afghanistan -->
+  <div class="condetail">
+      <div class="con">
+          <div class="title">
+              <h2>Afghanistan</h2>
+              <img id="area" src="/static/Image/afghanistan.png" alt="">
+          </div>
+          <p>Amidst the rugged landscapes of South Asia, Afghanistan emerges as a country steeped in history, cultural richness, and unwavering resilience. Despite enduring decades of conflict and instability, Afghanistan has persevered in safeguarding its cultural heritage and striving for progress. This essay endeavors to delve into the intricate layers of Afghanistan's history, socio-economic challenges, and aspirations for peace and development.</p>
+          <button class="afghanistan" onclick="toggleInfo('afghanistan')">Data</button>
+          <!-- Modal Popup for Afghanistan -->
+          <div id="afghanistanModal" class="popup">
+              <div class="modal-contents">
+                  <span class="close" onclick="toggleInfo('afghanistan')">&times;</span>
+                  <img src="/static/Image/Tooltip-3.png" alt="">
+                  <p>Afghanistan grapples with persistent food insecurity exacerbated by decades of conflict, political instability, and environmental degradation. The country's rugged terrain, arid climate, and reliance on rain-fed agriculture render it vulnerable to droughts and crop failures. Moreover, displacement, poverty, and inadequate infrastructure hinder access to food and nutrition services, particularly in conflict-affected regions. Efforts to address food insecurity in Afghanistan are hampered by security challenges, weak governance, and limited humanitarian access in remote areas.</p>
+                  <h3>GHI of Afghanistan from 2019 to 2023</h3>
+                  <img src="/static/Image/afghanistan line graph.png" alt="">
+              </div>
+          </div>  
+      </div>
+  </div>
+
+  <!-- Pakistan -->
+  <div class="condetail">
+      <div class="con">
+          <div class="title">
+              <h2>Pakistan</h2>
+              <img id="area" src="/static/Image/pakistan.png" alt="">
+          </div>
+          <p>Nestled at the crossroads of South Asia, Central Asia, and the Middle East, Pakistan emerges as a nation brimming with cultural heritage, natural beauty, and socio-economic complexities. Despite enduring challenges stemming from its geopolitical position and internal dynamics, Pakistan has displayed resilience and determination in navigating its path towards progress and development. This essay endeavors to unravel the diverse layers of Pakistan's history, culture, and contemporary challenges as it strives to shape its future trajectory</p>
+          <button class="pakistan" onclick="toggleInfo('pakistan')">Data</button>
+          <!-- Modal Popup for Pakistan -->
+          <div id="pakistanModal" class="popup">
+              <div class="modal-contents">
+                  <span class="close" onclick="toggleInfo('pakistan')">&times;</span>
+                  <img src="/static/Image/Tooltip-4.png" alt="">
+                  <p>Pakistan, with its diverse landscapes and agrarian economy, grapples with food insecurity driven by factors such as population growth, poverty, and inadequate infrastructure. While the country has made strides in agricultural production, challenges such as water scarcity, land degradation, and energy shortages hinder sustainable growth. Moreover, socio-economic disparities, gender inequalities, and conflict-related displacement exacerbate food insecurity, particularly in rural and marginalized communities. Efforts to address hunger in Pakistan are underway, including investments in agriculture, social safety nets, and nutrition programs.</p>
+                  <h3>GHI of Pakistan from 2019 to 2023</h3>
+                  <img src="/static/Image/pakistan line graph.png" alt="">
+              </div>
+          </div>  
+      </div>
+  </div>
+
+  <!-- India -->
+  <div class="condetail">
+      <div class="con">
+          <div class="title">
+              <h2>India</h2>
+              <img id="area" src="/static/Image/india.png" alt="">
+          </div>
+          <p>Spanning from the snow-capped peaks of the Himalayas to the sun-kissed shores of its southern coastline, India stands as a tapestry of diversity, heritage, and progress. Amidst the hustle and bustle of its vibrant cities and serene rural landscapes, India has carved a unique identity shaped by its ancient civilizations and modern ambitions. This essay sets out to explore the multifaceted dimensions of India, from its rich cultural tapestry to its burgeoning economy and dynamic societal transformations.</p>
+          <button class="india" onclick="toggleInfo('india')">Data</button>
+          <!-- Modal Popup for India -->
+          <div id="indiaModal" class="popup">
+              <div class="modal-contents">
+                  <span class="close" onclick="toggleInfo('india')">&times;</span>
+                  <img src="/static/Image/Tooltip-6.png" alt="">
+                  <p>As one of the world's most populous countries, India faces complex challenges related to food security and hunger. While significant progress has been made in reducing poverty and malnutrition, disparities persist across regions, socio-economic groups, and urban-rural divides. Issues such as food price volatility, inadequate storage and distribution systems, and unequal access to resources contribute to food insecurity for millions of Indians. Moreover, climate change impacts, water scarcity, and soil degradation pose threats to agricultural productivity and livelihoods.</p>
+                  <h3>GHI of India from 2019 to 2023</h3>
+                  <img src="/static/Image/india line graph.png" alt="">
+              </div>
+          </div>  
+      </div>
+  </div>
+
+
+
+<!-- Footer -->
+<footer>
+    <div class="line"></div>
+    <div class="left">
+        <img src="/static/Image/foodindexs.png" alt=""> 
+        <h3 id="ft">Food and Hunger Index</h3>
+    </div>
+  
+    <div class="right">
+        <h3 id="loc"><i class="fa-solid fa-location-dot fa-sm"></i> Dhobidhara, Kathmandu, Nepal</h3>
+        <h3 id="num"><i class="fa-solid fa-phone fa-sm"></i> Phone Number</h3>      
+    </div>
+    <div class="line"></div>
+    <div class="menu"> 
+        <ul>
+            <a href="/"><li>Home</li></a>
+            <a href="/information/"><li>Information</li>
+            <a href="/aboutus/"><li>About us</li>
+            <a href="/contact/"><li>Contact us</li>
+        </ul>
+       
+    </div> 
+  </footer>
+  
+
+
+
+
+   <!-- JavaScript to toggle modal visibility -->
+   <script>
+    function toggleInfo(country) {
+        var modal = document.getElementById(country + 'Modal');
+        modal.style.display = (modal.style.display === "block") ? "none" : "block";
+    }
+</script>
+  
+</body>
+</html>

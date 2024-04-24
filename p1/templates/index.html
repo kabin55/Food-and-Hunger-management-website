@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="/static/index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <img src="/static/Image/foodindexs.png">
+      <h3>Food and Hunger Index</h3>
+    </div>
+  
+    <div class="menu">
+      <ul>
+        <li class="current"><a href="/" >Home</a></li>
+        <li><a href="/information/">Information</a></li>
+        <li><a href="/contact/">Contact us</a></li>
+        <li><a href="/aboutus/">About us</a></li>
+      </ul>
+    </div>
+    <a href="/login/"><button class="Login">Login</button></a>
+    <a href="/signup/"><button class="donate-btn">Donate</button></a>
+  {% comment %} <button class="donate-btn">Donate</button> {% endcomment %}
+  </nav>
+
+<h1 id="title">Global Hunger Index of SAARC Countries</h1>
+<div class="map">
+  <img src="/static/Image/Map.png">
+</div>
+<div class="country">
+<img src="/static/Image/Tooltip-1.png" alt="">
+<img src="/static/Image/Tooltip-2.png" alt="">
+<img src="/static/Image/Tooltip-3.png" alt="">
+<img src="/static/Image/Tooltip-4.png" alt="">
+<img src="/static/Image/Tooltip-5.png" alt="">
+<img src="/static/Image/Tooltip-6.png" alt="">
+</div>
+<div class="more">
+  <a href="/information/"><button class="donate-btn">More Information</button></a>
+
+</div>
+
+<h1 id="detail">Some details</h1>
+
+<div class="wrapper">
+  <div class="container">
+    <h2>Suffering From Hunger</h2>
+    <span class="num" data-val="48">0</span>
+    <span class="text">Country</span>
+  </div>
+
+  <div class="container">
+    <h2>Very High Level Of Hungry</h2>
+    <span class="num" data-val="16">0</span>
+    <span class="text">Country</span>
+  </div>
+  <div class="container">
+    <h2>Insufficient food consumption </h2>
+    <span class="num" data-val="680">0</span>
+    <span class="text">Million People</span>
+  </div>
+</div>
+
+
+
+<div class="ghi-info">
+  <h2>Global Hunger Index (GHI)</h2>
+  <p>The Global Hunger Index (GHI) measures and tracks hunger at the global, regional, and national levels. It combines multiple indicators to provide a comprehensive assessment of hunger and malnutrition.
+  The GHI score indicated the severity of hunger on a scale from 0 to 100.</p>
+  <strong><p>Interpretation of GHI scores:</p></strong>
+
+  <ul>
+      <li>GHI Score < 10: Low hunger severity</li>
+      <li>GHI Score 10 - 19.9: Moderate hunger severity</li>
+      <li>GHI Score 20 - 34.9: Serious hunger severity</li>
+      <li>GHI Score ≥ 35: Alarming hunger severity</li>
+  </ul>
+  <p>Additional information about the factors contributing to hunger and efforts to combat it can be found on the official Global Hunger Index website.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer>
+  <div class="line"></div>
+  <div class="left">
+      <img src="/static/Image/foodindexs.png" alt=""> 
+      <h3 id="ft">Food and Hunger Index</h3>
+  </div>
+
+  <div class="right">
+      <h3 id="loc"><i class="fa-solid fa-location-dot fa-sm"></i> Dhobidhara, Kathmandu, Nepal</h3>
+      <h3 id="num"><i class="fa-solid fa-phone fa-sm"></i> Phone Number</h3>      
+  </div>
+  
+</footer>
+
+
+
+<script src="/static/index.js"></script>
+
+<script>
+
+
+  // Function to check if an element is in viewport
+function isInViewport(element) {
+    var rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// Function to start animation
+function startAnimation() {
+    let valueDisplays = document.querySelectorAll(".num");
+    let interval = 2000;
+
+    valueDisplays.forEach((valueDisplay) => {
+        let startValue = 0;
+        let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+        let duration = Math.floor(interval / endValue);
+        let counter = setInterval(function () {
+            startValue += 1;
+            valueDisplay.textContent = startValue;
+            if (startValue == endValue) {
+                clearInterval(counter);
+            }
+        }, duration);
+    });
+}
+
+// Function to handle scroll event
+window.addEventListener('scroll', function () {
+    let wrapper = document.querySelector('.wrapper');
+    if (isInViewport(wrapper)) {
+        startAnimation();
+        // Remove the event listener after the animation starts
+        window.removeEventListener('scroll', arguments.callee);
+    }
+});
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

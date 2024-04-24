@@ -1,0 +1,332 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 52px;
+    margin-bottom: 52px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="text"],
+textarea,
+select {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.terms {
+    font-size: 12px;
+    text-align: center;
+}
+
+.terms a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+
+/* Header*/
+
+nav {
+    background-color: #242524;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.logo {
+    display: flex;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 65px;
+    width: 70px;
+}
+
+.logo h3 {
+    margin-left: 10px;
+    margin-top: 25px;
+    color: #1af991cb;
+}
+
+.logo h3:hover {
+    color: #ffffff;
+}
+
+.menu {
+    flex: 1;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 12px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 18px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 0px;
+}
+
+.menu ul li a:hover {
+    color: #1af991cb;
+}
+
+.donate-btn {
+    background-color: #1af991cb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    height: 45px;
+    width: 105px;
+    font-weight: bold;
+}
+
+.donate-btn:hover {
+    background-color: #466332ad;
+}
+
+.Login {
+    background-color: #1af991cb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    height: 45px;
+    width: 105px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.Login:hover {
+    background-color: #466332ad;
+}
+
+
+/* footer */
+
+footer {
+    border-radius: 12px;
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    overflow: auto;
+}
+
+.line {
+    border-top: 1px solid #00ff40;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.left {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+#ft {
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+.left img {
+    margin-top: 20px;
+    width: 100px;
+    height: auto;
+}
+
+.right {
+    color: #ffffff;
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    margin-left: 44px;
+}
+
+.menu ul li {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    margin-right: 33px;
+    cursor: pointer;
+}
+
+.menu ul li:hover {
+    color: #1af991;
+}
+
+footer p {
+    color: rgb(255, 255, 255);
+    float: right;
+    margin: 0px 40px 0;
+}
+
+
+/*donate*/
+
+
+/* Hidden by default */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black with opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    border-radius: 19px;
+    max-width: fit-content;
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+    font-family: Arial, sans-serif;
+    /* Apply font family */
+}
+
+p {
+    font-size: larger;
+    color: #0056b3;
+}
+
+
+/* Close button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+input[type="button"],
+input[type="submit"] {
+    width: auto;
+    /* Allow buttons to take the width of their content */
+    padding: 10px 20px;
+    /* Add padding to buttons */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #3E8E41;
+}
+
+input[type="button"]:hover {
+    background-color: #F44336;
+}
+
+.donate-btn {
+    display: none;
+}

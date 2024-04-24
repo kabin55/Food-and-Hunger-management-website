@@ -1,0 +1,381 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Header*/
+
+nav {
+    background-color: #242524;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.logo {
+    display: flex;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 65px;
+    width: 70px;
+}
+
+.logo h3 {
+    margin-left: 10px;
+    margin-top: 25px;
+    color: #1af991cb;
+}
+
+.current a {
+    color: #00ff40 !important;
+    /* Change color as desired */
+}
+
+.logo h3:hover {
+    color: #ffffff;
+}
+
+.menu {
+    flex: 1;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 12px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-right: 18px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 0px;
+}
+
+.menu ul li a:hover {
+    color: #1af991cb;
+}
+
+.donate-btn {
+    background-color: #1af991cb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    height: 45px;
+    width: 105px;
+    font-weight: bold;
+}
+
+.donate-btn:hover {
+    background-color: #466332ad;
+}
+
+.Login {
+    background-color: #1af991cb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    height: 45px;
+    width: 105px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.Login:hover {
+    background-color: #466332ad;
+}
+
+
+/*Rank*/
+
+.rank {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rank h1 {
+    color: #ffffff;
+}
+
+.rank img {
+    width: 60%;
+    height: 65%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+
+/* footer */
+
+footer {
+    border-radius: 12px;
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    overflow: auto;
+}
+
+.line {
+    border-top: 1px solid #00ff40;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.left {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+#ft {
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+.left img {
+    margin-top: 20px;
+    width: 100px;
+    height: auto;
+}
+
+.right {
+    color: #ffffff;
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.right i {
+    color: #ffffff;
+}
+
+.menu {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    margin-left: 44px;
+}
+
+.menu ul li {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    margin-right: 33px;
+    cursor: pointer;
+}
+
+.menu ul li:hover {
+    color: #1af991;
+}
+
+footer p {
+    color: rgb(255, 255, 255);
+    float: right;
+    margin: 0px 40px 0;
+}
+
+
+/*body*/
+
+
+/*Title*/
+
+#title {
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    top: 12px;
+}
+
+
+/* Map */
+
+.map {
+    display: flex;
+    justify-content: center;
+}
+
+.map img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* Country*/
+
+.country {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.country img {
+    max-width: 100%;
+    /* Ensure images don't exceed their container width */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+.popup {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background overlay */
+    z-index: 1;
+    /* Ensure it appears above other content */
+}
+
+.modal-contents {
+    width: 80%;
+    max-width: 600px;
+    /* Set maximum width */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    position: relative;
+    /* Required for absolute positioning of close button */
+}
+
+.modal-contents p {
+    color: #000000;
+}
+
+.condetail {
+    background-color: #242524;
+    width: 52%;
+    position: relative;
+    padding: 20px;
+    /* Add some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    margin: 20px auto;
+    /* Center the .condetail horizontally */
+}
+
+.title {
+    margin-right: 20px;
+    /* Add some space between title and content */
+}
+
+.title img {
+    height: 120px;
+}
+
+.title h2 {
+    color: #ccc;
+}
+
+p {
+    color: #f5f5f5;
+    font-weight: 100;
+    font-size: medium;
+}
+
+.con button {
+    background-color: #1af991cb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    height: 45px;
+    width: 105px;
+    font-weight: bold;
+    margin-left: 38%;
+}
+
+.con button:hover {
+    background-color: #466332ad;
+}
+
+
+/* Close button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.modal-contents {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    /* Adjust the maximum width as needed */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border-radius: 10px;
+}
+
+.modal-contents img {
+    max-width: 100%;
+    /* Ensure the image does not exceed the modal width */
+    height: auto;
+}

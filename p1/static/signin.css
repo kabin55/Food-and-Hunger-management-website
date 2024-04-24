@@ -1,0 +1,499 @@
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main {
+        flex: 1;
+    }
+    
+     ::-webkit-scrollbar {
+        display: none;
+    }
+    /* Header*/
+    
+    .current a {
+        color: #00ff40 !important;
+        /* Change color as desired */
+    }
+    
+    nav {
+        background-color: #242524;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    
+    .logo {
+        display: flex;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+    
+    .logo img {
+        height: 65px;
+        width: 70px;
+    }
+    
+    .logo h3 {
+        margin-left: 10px;
+        margin-top: 25px;
+        color: #1af991cb;
+    }
+    
+    .logo h3:hover {
+        color: #ffffff;
+    }
+    
+    .menu {
+        flex: 1;
+        text-align: center;
+        margin-right: 10px;
+        margin-bottom: 12px;
+    }
+    
+    .menu ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .menu ul li {
+        display: inline-block;
+        margin-right: 18px;
+    }
+    
+    .menu ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 0px;
+    }
+    
+    .menu ul li a:hover {
+        color: #1af991cb;
+    }
+    
+    .donate-btn {
+        background-color: #1af991cb;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 50px;
+        position: relative;
+        overflow: hidden;
+        height: 45px;
+        width: 105px;
+        font-weight: bold;
+    }
+    
+    .donate-btn:hover {
+        background-color: #466332ad;
+    }
+    
+    .Login {
+        background-color: #1af991cb;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 50px;
+        position: relative;
+        overflow: hidden;
+        height: 45px;
+        width: 105px;
+        font-weight: bold;
+        margin-right: 5px;
+    }
+    
+    .Login:hover {
+        background-color: #466332ad;
+    }
+    /* footer */
+    
+    footer {
+        border-radius: 12px;
+        background-color: #000000;
+        padding: 20px;
+        text-align: center;
+        overflow: auto;
+    }
+    
+    .line {
+        border-top: 1px solid #00ff40;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .left {
+        float: left;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #ft {
+        color: rgb(255, 255, 255);
+        margin-top: 10px;
+    }
+    
+    .left img {
+        margin-top: 20px;
+        width: 100px;
+        height: auto;
+    }
+    
+    .right {
+        color: #ffffff;
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .menu {
+        margin-top: 20px;
+        text-align: left;
+    }
+    
+    .menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        margin-left: 44px;
+    }
+    
+    .menu ul li {
+        color: rgb(255, 255, 255);
+        display: inline-block;
+        margin-right: 33px;
+        cursor: pointer;
+    }
+    
+    .menu ul li:hover {
+        color: #1af991;
+    }
+    
+    footer p {
+        color: rgb(255, 255, 255);
+        float: right;
+        margin: 0px 40px 0;
+    }
+    /*body*/
+    
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 4%;
+        width: 90%;
+        max-width: 900px;
+        height: 550px;
+        background-color: #D9D9D9;
+        border-radius: 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    body .container .pic img {
+        position: absolute;
+        right: 2%;
+        top: 4%;
+        border-radius: 2rem;
+        width: 50%;
+        height: auto;
+    }
+    
+    .pic h2 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        padding-left: 10%;
+        padding-top: 2%;
+    }
+    
+    .all {
+        position: absolute;
+        border-radius: 2rem;
+        width: 50%;
+        height: auto;
+    }
+    
+    .email,
+    .password {
+        line-height: 40px;
+    }
+    
+    .email input,
+    .password input {
+        background-color: white;
+        border: transparent;
+        border-radius: 10px;
+        width: 80%;
+        /* Adjusted width relative to the container */
+        max-width: 350px;
+        /* Added maximum width to prevent input fields from becoming too wide */
+        height: 40px;
+        margin-left: 10%;
+        /* Adjusted margin for better alignment */
+    }
+    
+    .email ::placeholder,
+    .password ::placeholder {
+        text-align: center;
+    }
+    
+    .email h2,
+    .password h2 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 17px;
+        padding-left: 10%;
+        padding-top: 0.1%;
+    }
+    
+    .forget_password {
+        color: blue;
+        font-size: small;
+        margin-left: 1%;
+        /* Adjusted margin for better alignment */
+        line-height: 2px;
+        margin-top: 2px;
+        cursor: pointer;
+    }
+    
+    .forget_password:hover {
+        color: #162D3A;
+    }
+    
+    .sign_in button {
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: rgb(0, 0, 0);
+        cursor: pointer;
+        border: 10;
+        border-color: #1af991;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        width: 80%;
+        /* Adjusted width relative to the container */
+        max-width: 350px;
+        /* Added maximum width to prevent button from becoming too wide */
+        height: 40px;
+        border-radius: 10px;
+        margin-left: 10%;
+        /* Adjusted margin for better alignment */
+        cursor: pointer;
+    }
+    
+    .sign_in button:hover {
+        background-color: #1af991;
+    }
+    
+    .sign_in {
+        padding-top: 20px;
+    }
+    
+    p {
+        font-size: 13px;
+        margin-left: 15%;
+        /* Adjusted margin for better alignment */
+        margin-top: 20px;
+    }
+    
+    p a {
+        color: #00a2ff;
+    }
+    
+    a:hover {
+        color: #162D3A;
+    }
+    /*donate*/
+    /* Hidden by default */
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black with opacity */
+    }
+    /* Modal Content */
+    
+    .modal-content {
+        border-radius: 19px;
+        max-width: fit-content;
+        background-color: #fefefe;
+        margin: 15% auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        /* Could be more or less, depending on screen size */
+        font-family: Arial, sans-serif;
+        /* Apply font family */
+    }
+    /* Close button */
+    
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+    }
+    /* Form styling */
+    
+    form p {
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    label {
+        display: block;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    
+    select,
+    input[type="number"] {
+        width: 100%;
+        /* Make inputs take up full width */
+        padding: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        /* Ensure padding is included in width */
+    }
+    
+    select {
+        height: 30px;
+    }
+    
+    input[type="button"],
+    input[type="submit"] {
+        width: auto;
+        /* Allow buttons to take the width of their content */
+        padding: 10px 20px;
+        /* Add padding to buttons */
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #3E8E41;
+    }
+    
+    input[type="button"]:hover {
+        background-color: #F44336;
+    }
+    
+    #donationType {
+        width: 100%;
+        /* Make customDonationAmount take up full width */
+        padding: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        /* Ensure padding is included in width */
+        max-width: 286px;
+        /* Set a maximum width */
+    }
+    
+    #customDonationAmount {
+        width: 100%;
+        /* Make customDonationAmount take up full width */
+        padding: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        /* Ensure padding is included in width */
+        max-width: 286px;
+        /* Set a maximum width */
+    }
+    
+    #donationFrequency {
+        width: 100%;
+        /* Make customDonationAmount take up full width */
+        padding: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        /* Ensure padding is included in width */
+        max-width: 286px;
+        /* Set a maximum width */
+    }
+    /* Responsive styles */
+    
+    @media screen and (max-width: 600px) {
+        .modal-content {
+            width: 90%;
+            /* Adjust width for smaller screens */
+        }
+    }
+    /* Style for alert messages */
+    
+    .alert-container {
+        position: fixed;
+        top: 60px;
+        /* Adjust as needed based on your navigation bar height */
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 1000;
+        /* Ensure alerts appear above other content */
+    }
+    
+    .alert {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px auto;
+        background-color: #ffffff;
+        /* Red background for error messages */
+        color: #db2929;
+        /* White text color */
+        font-weight: bold;
+        /* Make text bold */
+        border: 1px solid #f5c6cb;
+        /* Red border */
+        border-radius: 5px;
+        position: relative;
+        z-index: 1000;
+        text-align: center;
+        /* Align text in the center */
+    }
+    
+    .alert button.close {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        color: #721c24;
+        /* Set close button color to match text color */
+    }
