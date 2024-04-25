@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-hy^^cw@t0v%37wj1gagh5e-cuu-3adi*t)&#c4!-7y-&3kjuk1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -132,4 +132,3 @@ STATICFILES_DIRS=[
 AUTHENTICATIO_BACKEDDS=[
     'django.contrib.auth.backends.Modelsbackend',
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
